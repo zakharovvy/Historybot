@@ -1,0 +1,9 @@
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:root:Произошла ошибка: name 'message' is not defined
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7770055748:AAGneW70lKozxClULV3LCFdn5mvfq82rk-s/getUpdates?offset=947322242&timeout=20 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002315D79B260>: Failed to resolve 'api.telegram.org' ([Errno 11001] getaddrinfo failed)"))
+ERROR:root:Произошла ошибка: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
