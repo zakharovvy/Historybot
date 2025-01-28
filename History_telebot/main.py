@@ -5,6 +5,7 @@ from pyexpat.errors import messages
 from telebot import types
 from data_check import data_func, check_answer,restart_or_not
 from event_check import event_func,check_answer_event,restart_event_or_not
+from information import info_about
 import webbrowser
 import time
 
@@ -20,9 +21,11 @@ def start(message):
   button1 = types.InlineKeyboardButton ('Повторять даты событий', callback_data = 'dates')
   button2 = types.InlineKeyboardButton ('Повторять события по датам', callback_data = 'events')
   button3 = types.InlineKeyboardButton ('Открыть сайт с датами', callback_data = 'site')
+  button4 = types.InlineKeyboardButton ('Информация', callback_data = 'info')
   markup.add(button1)
   markup.add(button2)
   markup.add(button3)
+  markup.add(button4)
   bot.send_message(message.chat.id, 'Вот основные кнопки', reply_markup= markup)
 
 #Отправка на сайт с датами
@@ -47,6 +50,9 @@ def callback_message (callback):
     data_func(bot,callback.message.chat.id)
   elif callback.data == 'events':
     event_func (bot,callback.message)
+  elif callback.data == 'info':
+    info_about(bot,callback.message)
+
 
 
 
