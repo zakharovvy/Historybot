@@ -2,8 +2,8 @@ import telebot
 from pyexpat.errors import messages
 from telebot import types
 import random
-import webbrowser
-import time
+
+
 
 
 

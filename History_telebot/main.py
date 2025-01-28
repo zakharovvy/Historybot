@@ -8,7 +8,7 @@ from event_check import event_func,check_answer_event,restart_event_or_not
 import webbrowser
 import time
 
-with open ('token.txt','r',encoding='UTF8') as file:
+with open ('token.txt', 'r', encoding='UTF8') as file:
     Bot_token = file.read()
 
 
