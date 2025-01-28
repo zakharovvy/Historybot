@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-  rand_data = random.randint(1,47)
+  rand_data = random.randint(1,100)
   match rand_data:
     case 1:
       question = 'В каком году произошло призвание варягов?'
