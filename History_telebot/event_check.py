@@ -197,7 +197,7 @@ def check_answer_event(bot,message, correct_answer_events):
     if message.text == correct_answer_events:
       bot.send_message(message.chat.id, "Правильно! Молодец!")
       bot.send_message(message.chat.id, "Хотите продолжить? Напишите 'да' или 'нет'.")
-      bot.register_next_step_handler(message, restart_event_or_not)
+      bot.register_next_step_handler(message, lambda msg: restart_event_or_not(bot, msg))
     else:
       bot.send_message(message.chat.id, f"Неправильно. Правильный ответ: {correct_answer_events}")
       bot.send_message(message.chat.id, "Хотите продолжить? Напишите 'да' или 'нет'.")
