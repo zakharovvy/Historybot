@@ -43,15 +43,16 @@ def get_error_files (message):
 #Обработка нажатий на кнопки:
 @bot.callback_query_handler(func = lambda callback:True)
 def callback_message (callback):
-  if callback.data == 'site':
-    bot.send_message(callback.message.chat.id, 'Хорошо, сейчас я скину ссылку на сайт с датами для подготовки')
-    bot.send_message(callback.message.chat.id, 'https://vpr-ege.ru/ege/istoriya/2038-daty-dlya-ege-po-istorii?ysclid=m2rc63qbhi806744659')
-  elif callback.data == 'dates':
-    data_func(bot,callback.message.chat.id)
-  elif callback.data == 'events':
-    event_func (bot,callback.message)
-  elif callback.data == 'info':
-    info_about(bot,callback.message)
+    bot.answer_callback_query(callback.id)
+    if callback.data == 'site':
+      bot.send_message(callback.message.chat.id, 'Хорошо, сейчас я скину ссылку на сайт с датами для подготовки')
+      bot.send_message(callback.message.chat.id, 'https://vpr-ege.ru/ege/istoriya/2038-daty-dlya-ege-po-istorii?ysclid=m2rc63qbhi806744659')
+    elif callback.data == 'dates':
+      data_func(bot,callback.message.chat.id)
+    elif callback.data == 'events':
+      event_func (bot,callback.message)
+    elif callback.data == 'info':
+      info_about(bot,callback.message)
 
 
 
