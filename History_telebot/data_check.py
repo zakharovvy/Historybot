@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-    rand_data = random.randint(1,120)
+    rand_data = random.randint(1,148)
     match rand_data:
         case 1:
           question = 'В каком году произошло призвание варягов?'
@@ -363,6 +363,90 @@ def data_func (bot,chat_id):
         case 120:
           question = 'В каком году произошло создание Верховного тайного совета?'
           correct_answer = '1726'
+        case 121:
+            question = 'В каком году произошла ссылка Меншикова в Березов?'
+            correct_answer = '1727'
+        case 122:
+            question = 'В каком году произошла отмена указа о единонаследии?'
+            correct_answer = '1731'
+        case 123:
+            question = 'В каком году произошло открытие Сухопутного шляхетского (кадетского) корпуса?'
+            correct_answer = '1732'
+        case 124:
+            question = 'В каком году был подписан Рештский договор с Персией?'
+            correct_answer = '1732'
+        case 125:
+            question = 'В каком году был подписан Белградский мир с Турцией?'
+            correct_answer = '1739'
+        case 126:
+            question = 'В каком году произошло свержение Ивана VI?'
+            correct_answer = '1741'
+        case 127:
+            question = 'В каком году был подписан Абосский мир с Швецией?'
+            correct_answer = '1743'
+        case 128:
+            question = 'В каком году произошла Отмена внутренних таможенных пошлин?'
+            correct_answer = '1754'
+        case 129:
+            question = 'В каком году произошло открытие Московского университета?'
+            correct_answer = '1755'
+        case 130:
+            question = 'В каком году произошла битва при Гросс-Егерсдорфе?'
+            correct_answer = '1757'
+        case 131:
+            question = 'В каком году произошло издание Указа о присоединении Восточной Пруссии к России?'
+            correct_answer = '1758'
+        case 132:
+            question = 'В каком году произошла битва при Цорндорфе?'
+            correct_answer = '1758'
+        case 133:
+            question = 'В каком году произошла битва при Кунерсдорфе?'
+            correct_answer = '1759'
+        case 134:
+            question = 'В каком году произошло взятие Берлина в Семилетнюю войну?'
+            correct_answer = '1760'
+        case 135:
+            question = 'В каком году произошло подписание Петербургский мир после Семилетней войны?'
+            correct_answer = '1762'
+        case 136:
+            question = 'В каком году произошло издание Манифеста о вольности дворянской?'
+            correct_answer = '1762'
+        case 137:
+            question = 'В каком году произошла Секулиризация церковных земель?'
+            correct_answer = '1764'
+        case 138:
+            question = 'В каком году произошел Созыв Уложенной комиссии?'
+            correct_answer = '1767'
+        case 139:
+            question = 'В каком году произошел роспуск Уложенной комиссии?'
+            correct_answer = '1768'
+        case 140:
+            question = 'В каком году начался выпуск ассигнаций?'
+            correct_answer = '1768'
+        case 141:
+            question = 'В каком году произошли битвы у реки Ларги и у реки Кагул?'
+            correct_answer = '1770'
+        case 142:
+            question = 'В каком году произошло Чесменское сражение?'
+            correct_answer = '1770'
+        case 143:
+            question = 'В каком году произошел Первый раздел Речи Посполитой?'
+            correct_answer = '1772'
+        case 144:
+            question = 'В каком году произошло подписание мира в Кючук-Кайнарджи?'
+            correct_answer = '1774'
+        case 145:
+            question = 'В каком году была проведена Губернская реформа Екатерины II?'
+            correct_answer = '1775'
+        case 146:
+            question = 'В каком году произошло присоединение Крыма к России Екатериной II?'
+            correct_answer = '1783'
+        case 147:
+            question = 'В каком году произошло издание Жалованной грамоты дворянству и Жалованной грамоты городам?'
+            correct_answer = '1785'
+        case 148:
+            question = 'В каком году была Оборона крепости Кинбурн Суворовым?'
+            correct_answer = '1787'
 
 
     bot.send_message(chat_id, question)
