@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-    rand_data = random.randint(1,148)
+    rand_data = random.randint(1,155)
     match rand_data:
         case 1:
           question = 'В каком году произошло призвание варягов?'
@@ -445,8 +445,30 @@ def data_func (bot,chat_id):
             question = 'В каком году произошло издание Жалованной грамоты дворянству и Жалованной грамоты городам?'
             correct_answer = '1785'
         case 148:
-            question = 'В каком году была Оборона крепости Кинбурн Суворовым?'
+            question = 'В каком году была оборона крепости Кинбурн Суворовым?'
             correct_answer = '1787'
+        case 149:
+            question = 'В каком году произошло взятие Очакова войсками Потемкина?'
+            correct_answer = '1788'
+        case 150:
+            question = 'В каком году произошли битвы при Фокшанах и Рымнике?'
+            correct_answer = '1789'
+        case 151:
+            question = 'В каком году произошло взятие Измаила Суворовым?'
+            correct_answer = '1790'
+        case 152:
+            question = 'В каком году произошел бой у мыса Калиакрия?'
+            correct_answer = '1791'
+        case 153:
+            question = 'В каком году произошли Второй раздел Речи Посполитой и восстание Костюшко?'
+            correct_answer = '1793'
+        case 154:
+            question = 'В каком году был заключен Ясский мирный договор?'
+            correct_answer = '1791'
+        case 155:
+            question = 'В каком году произошел Третий раздел Речи Посполитой?'
+            correct_answer = '1795'
+
 
 
     bot.send_message(chat_id, question)
