@@ -6,10 +6,10 @@ from telebot import types
 from data_check import data_func, check_answer,restart_or_not
 from event_check import event_func,check_answer_event,restart_event_or_not
 from information import info_about
-import webbrowser
-import time
 
-with open (r'C:\Users\Vasiliy 2\PycharmProjects\telebot_history\History_telebot\token.txt', 'r', encoding='UTF-8') as file:
+
+
+with open ('token.txt', 'r', encoding='UTF-8') as file:
     Bot_token = file.read()
 
 
