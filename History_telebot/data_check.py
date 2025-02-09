@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-    rand_data = random.randint(1,184)
+    rand_data = random.randint(1,196)
     match rand_data:
         case 1:
           question = 'В каком году произошло призвание варягов?'
@@ -555,6 +555,43 @@ def data_func (bot,chat_id):
         case 184:
             question = 'В каком году произошло событие, известное как «Сто дней Наполеона»?'
             correct_answer = '1815'
+        case 185:
+            question = 'В каком году произошло дарование конституции Царству Польскому?'
+            correct_answer = '1815'
+        case 186:
+            question = 'В каком году произошло cоздание Союза Спасения?'
+            correct_answer = '1816'
+        case 187:
+            question = 'В каком году произошло ?'
+            correct_answer = ''
+        case 188:
+            question = 'В каком году произошло cоздание Союза Благоденствия?'
+            correct_answer = '1818'
+        case 189:
+            question = 'В каком году произошло Восстание декабристов?'
+            correct_answer = '1825'
+        case 190:
+            question = 'В каком году произошло cоздание Собственной Его Императорского Величества Канцелярии ?'
+            correct_answer = '1826'
+        case 191:
+            question = 'В каком году был издан "Чугунный" цензурный устав?'
+            correct_answer = '1826'
+        case 192:
+            question = 'В каком году был подписан Туркманчайский мирный договор?'
+            correct_answer = '1828'
+        case 193:
+            question = 'В каком году произошло Наваринское морское сражение?'
+            correct_answer = '1827'
+        case 194:
+            question = 'В каком году был заключен Адрионопольский мирный договор?'
+            correct_answer = '1829'
+        case 195:
+            question = 'В каком году произошло утверждение положения о почетных гражданах?'
+            correct_answer = '1832'
+        case 196:
+            question = 'В каком году произошло окончание кодификации законов в Российской империи?'
+            correct_answer = '1832'
+
 
 
 
