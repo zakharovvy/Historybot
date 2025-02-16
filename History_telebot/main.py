@@ -10,7 +10,7 @@ from information import info_about
 
 
 with open ('token.txt', 'r', encoding='UTF-8') as file:
-    Bot_token = file.read()
+     Bot_token = file.read()
 
 
 bot = telebot.TeleBot(Bot_token)

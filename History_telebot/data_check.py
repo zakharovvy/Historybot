@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-    rand_data = random.randint(1,244)
+    rand_data = random.randint(1,260)
     match rand_data:
         case 1:
           question = 'В каком году произошло призвание варягов?'
@@ -295,7 +295,7 @@ def data_func (bot,chat_id):
           question = 'В каком году произошло открытие Славяно-греко-латинской академии?'
           correct_answer = '1687'
         case 98:
-          question = 'В каком году произошло подписание Нерчинского договор с Китаем?'
+          question = 'В каком году произошло подписание Нерчинского договора с Китаем?'
           correct_answer = '1689'
         case 99:
           question = 'В каком году произошел Первый Азовский поход?'
@@ -313,7 +313,7 @@ def data_func (bot,chat_id):
           question = 'В каком году произошло издание первой регулярной печатной газеты «Ведомости»?'
           correct_answer = '1702'
         case 104:
-          question = 'В каком году произошл основание Санкт-Петербурга?'
+          question = 'В каком году произошло основание Санкт-Петербурга?'
           correct_answer = '1703'
         case 105:
           question = 'В каком году произошла битва у деревни Лесной?'
@@ -735,7 +735,69 @@ def data_func (bot,chat_id):
         case 244:
             question = 'В каком году произошел 1-ый съезд РСДРП?'
             correct_answer = '1898'
-
+        case 245:
+            question = 'В каком году произошло образование партии эсеров?'
+            correct_answer = '1902'
+        case 246:
+            question = 'В каком году произошел раскол РСДРП на большевиков и меньшевиков?'
+            correct_answer = '1903'
+        case 247:
+            question = 'В каком году произошло нападение японцев на Порт-Артур?'
+            correct_answer = '1904'
+        case 248:
+            question = 'В каком году произошел бой в Чемульпо ?'
+            correct_answer = '1904'
+        case 249:
+            question = 'В каком году произошло «Кровавое воскресенье»?'
+            correct_answer = '1905'
+        case 250:
+            question = 'В каком году произошло Мукденское сражение?'
+            correct_answer = '1905'
+        case 251:
+            question = 'В каком году произошло Цусимское сражение?'
+            correct_answer = '1905'
+        case 252:
+            question = 'В каком году произошло восстание матросов на броненосце «князь Потемкин-Таврический»?'
+            correct_answer = '1905'
+        case 253:
+            question = 'В каком году был заключен Порсмутский мир?'
+            correct_answer = '1905'
+        case 254:
+            question = 'В каком году произошла Всероссийская октябрьская стачка ?'
+            correct_answer = '1905'
+        case 255:
+            question = 'В каком году произошла публикация Манифеста 17 октября?'
+            correct_answer = '1905'
+        case 256:
+            question = 'В каком году произошло создание партии «Союз 17 октября»?'
+            correct_answer = '1905'
+        case 257:
+            question = 'В каком году произошел созыв первой Государственной думы?'
+            correct_answer = '1905'
+        case 258:
+            question = 'В каком году началась Столыпинская аграрная реформа?'
+            correct_answer = '1906'
+        case 259:
+            question = 'В каком году произошел созыв второй Государственной думы?'
+            correct_answer = '1907'
+        case 260:
+            question = 'В каком году произошел «Третьеиюнский переворот»?'
+            correct_answer = '1907'
+        # case 261:
+        #     question = 'В каком году произошел ?'
+        #     correct_answer = ''
+        # case 262:
+        #     question = 'В каком году произошел ?'
+        #     correct_answer = ''
+        # case 263:
+        #     question = 'В каком году произошел ?'
+        #     correct_answer = ''
+        # case 264:
+        #     question = 'В каком году произошел ?'
+        #     correct_answer = ''
+        # case 265:
+        #     question = 'В каком году произошел ?'
+        #     correct_answer = ''
 
 
     bot.send_message(chat_id, question)
