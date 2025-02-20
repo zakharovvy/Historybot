@@ -12,8 +12,8 @@ from information import info_about
 with open ('token.txt', 'r', encoding='UTF-8') as file:
      Bot_token = file.read()
 
-
 bot = telebot.TeleBot(Bot_token)
+
 @bot.message_handler(commands = ['start', 'menu'])
 def start(message):
   bot.send_message(message.chat.id, 'Привет-привет! Это бот поможет тебе выучить даты по истории России')

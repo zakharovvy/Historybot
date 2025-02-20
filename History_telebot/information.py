@@ -3,7 +3,7 @@ from pyexpat.errors import messages
 from telebot import types
 
 def info_about(bot,message):
-    with open('Date_of_payment', 'r',encoding='UTF8') as file:
+    with open('Date_of_payment.txt', 'r',encoding='UTF8') as file:
         money_date = file.read()
     bot.send_message(message.chat.id,f'Данные бот работает на некоммерческой основе.'
                                      f'  Все права защищены. \n Бот работает за счет пожертвований.'
