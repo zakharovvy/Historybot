@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-    rand_data = random.randint(1,260)
+    rand_data = random.randint(1,278)
     match rand_data:
         case 1:
           question = 'В каком году произошло призвание варягов?'
@@ -136,7 +136,7 @@ def data_func (bot,chat_id):
           question = 'В каком году произошла Флорентийская уния?'
           correct_answer = '1439'
         case 45:
-          question = 'В каком году произошла битва на реке Шелони с Новгородом?'
+          question = 'В каком году произошла битва на реке Шелони?'
           correct_answer = '1471'
         case 46:
           question = 'В каком году произошло присоединение Новгорода к Москве?'
@@ -783,21 +783,61 @@ def data_func (bot,chat_id):
         case 260:
             question = 'В каком году произошел «Третьеиюнский переворот»?'
             correct_answer = '1907'
-        # case 261:
-        #     question = 'В каком году произошел ?'
-        #     correct_answer = ''
-        # case 262:
-        #     question = 'В каком году произошел ?'
-        #     correct_answer = ''
-        # case 263:
-        #     question = 'В каком году произошел ?'
-        #     correct_answer = ''
-        # case 264:
-        #     question = 'В каком году произошел ?'
-        #     correct_answer = ''
-        # case 265:
-        #     question = 'В каком году произошел ?'
-        #     correct_answer = ''
+        case 261:
+            question = 'В каком году произошло Образование Антанты?'
+            correct_answer = '1907'
+        case 262:
+            question = 'В каком году произошел созыв III Государственной Думы?'
+            correct_answer = '1907'
+        case 263:
+            question = 'В каком году произошел Ленский расстрел рабочих?'
+            correct_answer = '1912'
+        case 264:
+            question = 'В каком году произошел созыв IV Государственной Думы?'
+            correct_answer = '1912'
+        case 265:
+            question = 'В каком году был убит эрцгерцог Франс Фердинанд?'
+            correct_answer = '1914'
+        case 266:
+            question = 'В каком году Германская империя объявила войну России?'
+            correct_answer = '1914'
+        case 267:
+            question = 'В каком году произошла Восточно-Прусская операция Первой мировой войны?'
+            correct_answer = '1914'
+        case 268:
+            question = 'В каком году произошла Галицийская битва?'
+            correct_answer = '1914'
+        case 269:
+            question = 'В каком году произошло «Великое отступление» русской армии в Первой мировой войне?'
+            correct_answer = '1915'
+        case 270:
+            question = 'В каком году произошла «Атака мертвецов» при обороне крепости Осовец?'
+            correct_answer = '1915'
+        case 271:
+            question = 'В каком году произошло Образование Прогрессивного блока?'
+            correct_answer = '1915'
+        case 272:
+            question = 'В каком году Николай II лично становиться верховным главнокомандующим?'
+            correct_answer = '1915'
+        case 273:
+            question = 'В каком году произошел «Брусиловский прорыв»?'
+            correct_answer = '1916'
+        case 274:
+            question = 'В каком году Милюков выступил с речью «Это глупость или измена?»?'
+            correct_answer = '1916'
+        case 275:
+            question = 'В каком году произошло создание Временного комитета Гос. Думы и Петроградского Совета?'
+            correct_answer = '1917'
+        case 276:
+            question = 'В каком году Петроградский Совет издает «Приказ №1»?'
+            correct_answer = '1917'
+        case 277:
+            question = 'В каком году было образово Временное правительство?'
+            correct_answer = '1917'
+        case 278:
+            question = 'В каком году произошло отречение Николая II от престола?'
+            correct_answer = '1917'
+
 
 
     bot.send_message(chat_id, question)
