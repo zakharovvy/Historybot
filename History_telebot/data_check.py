@@ -4,7 +4,7 @@ from telebot import TeleBot
 
 
 def data_func (bot,chat_id):
-    rand_data = random.randint(1,300)
+    rand_data = random.randint(1,326)
     match rand_data:
         case 1:
           question = 'В каком году произошло призвание варягов?'
@@ -903,10 +903,89 @@ def data_func (bot,chat_id):
         case 300:
             question = 'В каком году произошло образование КОМУЧ?'
             correct_answer = '1918'
+        case 301:
+            question = 'В каком году произошел Левоэсеровский мятеж и убийство Мирбаха?'
+            correct_answer = '1918'
+        case 302:
+            question = 'В каком году произошло принятие первой конституции РСФСР?'
+            correct_answer = '1918'
+        case 303:
+            question = 'В каком году произошло создание Реввоенсовета?'
+            correct_answer = '1918'
+        case 304:
+            question = 'В каком году произошло создание Уфимской директории?'
+            correct_answer = '1918'
+        case 305:
+            question = 'В каком году Колчак провозгласил себя Верховным правителем России?'
+            correct_answer = '1918'
+        case 306:
+            question = 'В каком году произошли наступления Юденича на Петроград?'
+            correct_answer = '1919'
+        case 307:
+            question = 'В каком году произошло издание Деникиным «Московской» директивы?'
+            correct_answer = '1919'
+        case 308:
+            question = 'В каком году произошел штурм Перекопа войсками Фрунзе?'
+            correct_answer = '1920'
+        case 309:
+            question = 'В каком году произошло подписание Рижского мира с Польшей?'
+            correct_answer = '1921'
+        case 310:
+            question = 'В каком году произошло Кроштадтское восстание?'
+            correct_answer = '1921'
+        case 311:
+            question = 'В каком году произошел X съезд РКП (б)?'
+            correct_answer = '1921'
+        case 312:
+            question = 'В каком году произошел переход от продразверстки к продналогу?'
+            correct_answer = '1921'
+        case 313:
+            question = 'В каком году произошел переход к НЭП?'
+            correct_answer = '1921'
+        case 314:
+            question = 'В каком году произошло принятие резолюции «О единстве партии»?'
+            correct_answer = '1921'
+        case 315:
+            question = 'В каком году произошла отправка из РСФСР «Философских» пароходов?'
+            correct_answer = '1922'
+        case 316:
+            question = 'В каком году произошло образование СССР?'
+            correct_answer = '1922'
+        case 317:
+            question = 'В каком году произошел первый кризис НЭП («ножницы цен»)?'
+            correct_answer = '1923'
+        case 318:
+            question = 'В каком году произошло принятие первого пятилетнего плана?'
+            correct_answer = '1928'
+        case 319:
+            question = 'В каком году произошла публикация статьи Сталина «Год великого перелома»?'
+            correct_answer = '1929'
+        case 320:
+            question = 'В каком году произошло появление ГУЛАГ?'
+            correct_answer = '1930'
+        case 321:
+            question = 'В каком году произошла публикация статьи Сталина «Головокружение от успехов»?'
+            correct_answer = '1930'
+        case 322:
+            question = 'В каком году произошло введение в СССР единой паспортной системы?'
+            correct_answer = '1932'
+        case 323:
+            question = 'В каком году произошло спасение челюскинцев?'
+            correct_answer = '1934'
+        case 324:
+            question = 'В каком году произошло убийство Кирова в Ленинграде?'
+            correct_answer = '1934'
+        case 325:
+            question = 'В каком году началось Стахановское движение?'
+            correct_answer = '1935'
+        case 326:
+            question = 'В каком году произошел ввод в эскплуатацию первой ветки московского метрополитена?'
+            correct_answer = '1935'
 
         # case :
         #     question = 'В каком году произошло ?'
         #     correct_answer = ''
+
 
 
 
