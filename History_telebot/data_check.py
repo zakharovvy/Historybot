@@ -1,16 +1,6 @@
 import random
 import pprint
 from telebot import TeleBot
-from Keyboards import data_func_choice_keyboard_function
-
-def data_func_choice(bot, chat_id):
-    bot.send_message(chat_id, "Хорошо, тогда необходимо выбрать: повторять даты по векам или по эпохам")
-    data_func_choice_keyboard_function(bot, chat_id)
-
-
-@bot.callback_query_handler(func=lambda callback: True)
-
-
 
 
 
